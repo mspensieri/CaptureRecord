@@ -196,7 +196,6 @@
 - (void)_stopTimer {
   if (_timer) {
     dispatch_source_cancel(_timer);
-    dispatch_release(_timer);
     _timer = nil;
   }
 }

@@ -6,43 +6,90 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		DCDED62218A413650019A070 /* Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = DCDED62518A413650019A070 /* Build configuration list for PBXAggregateTarget "Framework" */;
+			buildPhases = (
+				DCDED62818A413890019A070 /* ShellScript */,
+			);
+			dependencies = (
+				DCDED62718A413730019A070 /* PBXTargetDependency */,
+			);
+			name = Framework;
+			productName = Framework;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
-		0004914F16373E700083A8D0 /* License.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0004914E16373E700083A8D0 /* License.pdf */; };
-		00F90B5115FFE93F00B5F4DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F90B5015FFE93F00B5F4DF /* Foundation.framework */; };
-		00F90B5715FFE93F00B5F4DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00F90B5515FFE93F00B5F4DF /* InfoPlist.strings */; };
-		00F90B7C15FFE9B200B5F4DF /* CaptureRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B5E15FFE9B200B5F4DF /* CaptureRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B7D15FFE9B200B5F4DF /* CRCameraRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B5F15FFE9B200B5F4DF /* CRCameraRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B7E15FFE9B200B5F4DF /* CRCameraRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6015FFE9B200B5F4DF /* CRCameraRecorder.m */; };
-		00F90B7F15FFE9B200B5F4DF /* CRCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6115FFE9B200B5F4DF /* CRCGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B8015FFE9B200B5F4DF /* CRCGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6215FFE9B200B5F4DF /* CRCGUtils.m */; };
-		00F90B8115FFE9B200B5F4DF /* CRDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6315FFE9B200B5F4DF /* CRDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B8215FFE9B200B5F4DF /* CRDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6415FFE9B200B5F4DF /* CRDefines.m */; };
-		00F90B8315FFE9B200B5F4DF /* CRRecordable.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6515FFE9B200B5F4DF /* CRRecordable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B8415FFE9B200B5F4DF /* CRRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6615FFE9B200B5F4DF /* CRRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B8515FFE9B200B5F4DF /* CRRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6715FFE9B200B5F4DF /* CRRecorder.m */; };
-		00F90B8615FFE9B200B5F4DF /* CRScreenRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6815FFE9B200B5F4DF /* CRScreenRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B8715FFE9B200B5F4DF /* CRScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6915FFE9B200B5F4DF /* CRScreenRecorder.m */; };
-		00F90B8815FFE9B200B5F4DF /* CRUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6A15FFE9B200B5F4DF /* CRUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B8915FFE9B200B5F4DF /* CRUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6B15FFE9B200B5F4DF /* CRUIButton.m */; };
-		00F90B8C15FFE9B200B5F4DF /* CRUIRecordOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6E15FFE9B200B5F4DF /* CRUIRecordOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B8D15FFE9B200B5F4DF /* CRUIRecordOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6F15FFE9B200B5F4DF /* CRUIRecordOverlay.m */; };
-		00F90B8E15FFE9B200B5F4DF /* CRUITouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7015FFE9B200B5F4DF /* CRUITouch.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		00F90B8F15FFE9B200B5F4DF /* CRUITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7115FFE9B200B5F4DF /* CRUITouch.m */; };
-		00F90B9015FFE9B200B5F4DF /* CRUIViewRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7215FFE9B200B5F4DF /* CRUIViewRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B9115FFE9B200B5F4DF /* CRUIViewRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7315FFE9B200B5F4DF /* CRUIViewRecorder.m */; };
-		00F90B9215FFE9B200B5F4DF /* CRUIWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7415FFE9B200B5F4DF /* CRUIWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B9315FFE9B200B5F4DF /* CRUIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7515FFE9B200B5F4DF /* CRUIWindow.m */; };
-		00F90B9415FFE9B200B5F4DF /* CRUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7615FFE9B200B5F4DF /* CRUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B9515FFE9B200B5F4DF /* CRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7715FFE9B200B5F4DF /* CRUtils.m */; };
-		00F90B9615FFE9B200B5F4DF /* CRVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7815FFE9B200B5F4DF /* CRVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B9715FFE9B200B5F4DF /* CRVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7915FFE9B200B5F4DF /* CRVideo.m */; };
-		00F90B9815FFE9B200B5F4DF /* CRVideoWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7A15FFE9B200B5F4DF /* CRVideoWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		00F90B9915FFE9B200B5F4DF /* CRVideoWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7B15FFE9B200B5F4DF /* CRVideoWriter.m */; };
+		DCAE572818A4106200E7447D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F90B5015FFE93F00B5F4DF /* Foundation.framework */; };
+		DCAE573618A4106200E7447D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAE573518A4106200E7447D /* XCTest.framework */; };
+		DCAE573718A4106200E7447D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00F90B5015FFE93F00B5F4DF /* Foundation.framework */; };
+		DCAE573918A4106200E7447D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAE573818A4106200E7447D /* UIKit.framework */; };
+		DCAE573C18A4106200E7447D /* libCaptureRecord.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAE572718A4106200E7447D /* libCaptureRecord.a */; };
+		DCAE574218A4106200E7447D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DCAE574018A4106200E7447D /* InfoPlist.strings */; };
+		DCAE574418A4106200E7447D /* CaptureRecordTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DCAE574318A4106200E7447D /* CaptureRecordTests.m */; };
+		DCAE574C18A410FC00E7447D /* CaptureRecord.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B5E15FFE9B200B5F4DF /* CaptureRecord.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE574D18A4111D00E7447D /* CRCameraRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6015FFE9B200B5F4DF /* CRCameraRecorder.m */; };
+		DCAE574E18A4111D00E7447D /* CRCGUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6215FFE9B200B5F4DF /* CRCGUtils.m */; };
+		DCAE574F18A4111D00E7447D /* CRDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6415FFE9B200B5F4DF /* CRDefines.m */; };
+		DCAE575018A4111D00E7447D /* CRRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6715FFE9B200B5F4DF /* CRRecorder.m */; };
+		DCAE575118A4111D00E7447D /* CRScreenRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6915FFE9B200B5F4DF /* CRScreenRecorder.m */; };
+		DCAE575218A4111D00E7447D /* CRUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6B15FFE9B200B5F4DF /* CRUIButton.m */; };
+		DCAE575318A4111D00E7447D /* CRUIRecordOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6F15FFE9B200B5F4DF /* CRUIRecordOverlay.m */; };
+		DCAE575418A4111D00E7447D /* CRUITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7115FFE9B200B5F4DF /* CRUITouch.m */; };
+		DCAE575518A4111D00E7447D /* CRUIViewRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7315FFE9B200B5F4DF /* CRUIViewRecorder.m */; };
+		DCAE575618A4111D00E7447D /* CRUIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7515FFE9B200B5F4DF /* CRUIWindow.m */; };
+		DCAE575718A4111D00E7447D /* CRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7715FFE9B200B5F4DF /* CRUtils.m */; };
+		DCAE575818A4111D00E7447D /* CRVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7915FFE9B200B5F4DF /* CRVideo.m */; };
+		DCAE575918A4111D00E7447D /* CRVideoWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7B15FFE9B200B5F4DF /* CRVideoWriter.m */; };
+		DCAE575A18A4114A00E7447D /* CRCameraRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B5F15FFE9B200B5F4DF /* CRCameraRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE575B18A4114A00E7447D /* CRCGUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6115FFE9B200B5F4DF /* CRCGUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE575C18A4114A00E7447D /* CRDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6315FFE9B200B5F4DF /* CRDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE575D18A4114A00E7447D /* CRRecordable.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6515FFE9B200B5F4DF /* CRRecordable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE575E18A4114A00E7447D /* CRRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6615FFE9B200B5F4DF /* CRRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE575F18A4114A00E7447D /* CRScreenRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6815FFE9B200B5F4DF /* CRScreenRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576018A4114A00E7447D /* CRUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6A15FFE9B200B5F4DF /* CRUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576118A4114A00E7447D /* CRUIRecordOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6E15FFE9B200B5F4DF /* CRUIRecordOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576218A4114A00E7447D /* CRUITouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7015FFE9B200B5F4DF /* CRUITouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576318A4114A00E7447D /* CRUIViewRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7215FFE9B200B5F4DF /* CRUIViewRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576418A4114A00E7447D /* CRUIWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7415FFE9B200B5F4DF /* CRUIWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576518A4114A00E7447D /* CRUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7615FFE9B200B5F4DF /* CRUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576618A4114A00E7447D /* CRVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7815FFE9B200B5F4DF /* CRVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DCAE576718A4114A00E7447D /* CRVideoWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7A15FFE9B200B5F4DF /* CRVideoWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DCAE573A18A4106200E7447D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F90B4015FFE93F00B5F4DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAE572618A4106200E7447D;
+			remoteInfo = CaptureRecord;
+		};
+		DCDED62618A413730019A070 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 00F90B4015FFE93F00B5F4DF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DCAE572618A4106200E7447D;
+			remoteInfo = CaptureRecord;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DCAE572518A4106200E7447D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0004914E16373E700083A8D0 /* License.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = License.pdf; sourceTree = "<group>"; };
-		00F90B4D15FFE93F00B5F4DF /* CaptureRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework.static; includeInIndex = 0; path = CaptureRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		00F90B5015FFE93F00B5F4DF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		00F90B5415FFE93F00B5F4DF /* CaptureRecord-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaptureRecord-Info.plist"; sourceTree = "<group>"; };
 		00F90B5615FFE93F00B5F4DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -75,14 +122,32 @@
 		00F90B7915FFE9B200B5F4DF /* CRVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRVideo.m; sourceTree = "<group>"; };
 		00F90B7A15FFE9B200B5F4DF /* CRVideoWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRVideoWriter.h; sourceTree = "<group>"; };
 		00F90B7B15FFE9B200B5F4DF /* CRVideoWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRVideoWriter.m; sourceTree = "<group>"; };
+		DCAE572718A4106200E7447D /* libCaptureRecord.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCaptureRecord.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAE573418A4106200E7447D /* CaptureRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaptureRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCAE573518A4106200E7447D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		DCAE573818A4106200E7447D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		DCAE573F18A4106200E7447D /* CaptureRecordTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CaptureRecordTests-Info.plist"; sourceTree = "<group>"; };
+		DCAE574118A4106200E7447D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DCAE574318A4106200E7447D /* CaptureRecordTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptureRecordTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00F90B4715FFE93F00B5F4DF /* Frameworks */ = {
+		DCAE572418A4106200E7447D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F90B5115FFE93F00B5F4DF /* Foundation.framework in Frameworks */,
+				DCAE572818A4106200E7447D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAE573118A4106200E7447D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAE573618A4106200E7447D /* XCTest.framework in Frameworks */,
+				DCAE573918A4106200E7447D /* UIKit.framework in Frameworks */,
+				DCAE573718A4106200E7447D /* Foundation.framework in Frameworks */,
+				DCAE573C18A4106200E7447D /* libCaptureRecord.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				00F90B5215FFE93F00B5F4DF /* CaptureRecord */,
+				DCAE573D18A4106200E7447D /* CaptureRecordTests */,
 				00F90B4F15FFE93F00B5F4DF /* Frameworks */,
 				00F90B4E15FFE93F00B5F4DF /* Products */,
 			);
@@ -101,7 +167,8 @@
 		00F90B4E15FFE93F00B5F4DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				00F90B4D15FFE93F00B5F4DF /* CaptureRecord.framework */,
+				DCAE572718A4106200E7447D /* libCaptureRecord.a */,
+				DCAE573418A4106200E7447D /* CaptureRecordTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				00F90B5015FFE93F00B5F4DF /* Foundation.framework */,
+				DCAE573518A4106200E7447D /* XCTest.framework */,
+				DCAE573818A4106200E7447D /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,45 +230,61 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		DCAE573D18A4106200E7447D /* CaptureRecordTests */ = {
+			isa = PBXGroup;
+			children = (
+				DCAE574318A4106200E7447D /* CaptureRecordTests.m */,
+				DCAE573E18A4106200E7447D /* Supporting Files */,
+			);
+			path = CaptureRecordTests;
+			sourceTree = "<group>";
+		};
+		DCAE573E18A4106200E7447D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCAE573F18A4106200E7447D /* CaptureRecordTests-Info.plist */,
+				DCAE574018A4106200E7447D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		00F90B4815FFE93F00B5F4DF /* Headers */ = {
+		DCAE574B18A410F600E7447D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F90B7C15FFE9B200B5F4DF /* CaptureRecord.h in Headers */,
-				00F90B7D15FFE9B200B5F4DF /* CRCameraRecorder.h in Headers */,
-				00F90B7F15FFE9B200B5F4DF /* CRCGUtils.h in Headers */,
-				00F90B8115FFE9B200B5F4DF /* CRDefines.h in Headers */,
-				00F90B8315FFE9B200B5F4DF /* CRRecordable.h in Headers */,
-				00F90B8415FFE9B200B5F4DF /* CRRecorder.h in Headers */,
-				00F90B8615FFE9B200B5F4DF /* CRScreenRecorder.h in Headers */,
-				00F90B8815FFE9B200B5F4DF /* CRUIButton.h in Headers */,
-				00F90B8C15FFE9B200B5F4DF /* CRUIRecordOverlay.h in Headers */,
-				00F90B8E15FFE9B200B5F4DF /* CRUITouch.h in Headers */,
-				00F90B9015FFE9B200B5F4DF /* CRUIViewRecorder.h in Headers */,
-				00F90B9215FFE9B200B5F4DF /* CRUIWindow.h in Headers */,
-				00F90B9415FFE9B200B5F4DF /* CRUtils.h in Headers */,
-				00F90B9615FFE9B200B5F4DF /* CRVideo.h in Headers */,
-				00F90B9815FFE9B200B5F4DF /* CRVideoWriter.h in Headers */,
+				DCAE574C18A410FC00E7447D /* CaptureRecord.h in Headers */,
+				DCAE575C18A4114A00E7447D /* CRDefines.h in Headers */,
+				DCAE575D18A4114A00E7447D /* CRRecordable.h in Headers */,
+				DCAE575E18A4114A00E7447D /* CRRecorder.h in Headers */,
+				DCAE576418A4114A00E7447D /* CRUIWindow.h in Headers */,
+				DCAE576718A4114A00E7447D /* CRVideoWriter.h in Headers */,
+				DCAE575A18A4114A00E7447D /* CRCameraRecorder.h in Headers */,
+				DCAE575B18A4114A00E7447D /* CRCGUtils.h in Headers */,
+				DCAE575F18A4114A00E7447D /* CRScreenRecorder.h in Headers */,
+				DCAE576018A4114A00E7447D /* CRUIButton.h in Headers */,
+				DCAE576118A4114A00E7447D /* CRUIRecordOverlay.h in Headers */,
+				DCAE576218A4114A00E7447D /* CRUITouch.h in Headers */,
+				DCAE576318A4114A00E7447D /* CRUIViewRecorder.h in Headers */,
+				DCAE576518A4114A00E7447D /* CRUtils.h in Headers */,
+				DCAE576618A4114A00E7447D /* CRVideo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		00F90B4C15FFE93F00B5F4DF /* CaptureRecord */ = {
+		DCAE572618A4106200E7447D /* CaptureRecord */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00F90B5B15FFE93F00B5F4DF /* Build configuration list for PBXNativeTarget "CaptureRecord" */;
+			buildConfigurationList = DCAE574518A4106200E7447D /* Build configuration list for PBXNativeTarget "CaptureRecord" */;
 			buildPhases = (
-				00F90B4515FFE93F00B5F4DF /* ShellScript */,
-				00F90B4615FFE93F00B5F4DF /* Sources */,
-				00F90B4715FFE93F00B5F4DF /* Frameworks */,
-				00F90B4815FFE93F00B5F4DF /* Headers */,
-				00F90B4915FFE93F00B5F4DF /* Resources */,
-				00F90B4A15FFE93F00B5F4DF /* ShellScript */,
-				00F90B4B15FFE93F00B5F4DF /* ShellScript */,
+				DCAE572318A4106200E7447D /* Sources */,
+				DCAE572418A4106200E7447D /* Frameworks */,
+				DCAE572518A4106200E7447D /* CopyFiles */,
+				DCAE574B18A410F600E7447D /* Headers */,
+				DCAE576818A411AE00E7447D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -207,8 +292,26 @@
 			);
 			name = CaptureRecord;
 			productName = CaptureRecord;
-			productReference = 00F90B4D15FFE93F00B5F4DF /* CaptureRecord.framework */;
-			productType = "com.apple.product-type.framework.static";
+			productReference = DCAE572718A4106200E7447D /* libCaptureRecord.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DCAE573318A4106200E7447D /* CaptureRecordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCAE574818A4106200E7447D /* Build configuration list for PBXNativeTarget "CaptureRecordTests" */;
+			buildPhases = (
+				DCAE573018A4106200E7447D /* Sources */,
+				DCAE573118A4106200E7447D /* Frameworks */,
+				DCAE573218A4106200E7447D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCAE573B18A4106200E7447D /* PBXTargetDependency */,
+			);
+			name = CaptureRecordTests;
+			productName = CaptureRecordTests;
+			productReference = DCAE573418A4106200E7447D /* CaptureRecordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -216,7 +319,7 @@
 		00F90B4015FFE93F00B5F4DF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Miscellaneum LLC";
 			};
 			buildConfigurationList = 00F90B4315FFE93F00B5F4DF /* Build configuration list for PBXProject "CaptureRecord" */;
@@ -231,25 +334,26 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				00F90B4C15FFE93F00B5F4DF /* CaptureRecord */,
+				DCAE572618A4106200E7447D /* CaptureRecord */,
+				DCAE573318A4106200E7447D /* CaptureRecordTests */,
+				DCDED62218A413650019A070 /* Framework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00F90B4915FFE93F00B5F4DF /* Resources */ = {
+		DCAE573218A4106200E7447D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F90B5715FFE93F00B5F4DF /* InfoPlist.strings in Resources */,
-				0004914F16373E700083A8D0 /* License.pdf in Resources */,
+				DCAE574218A4106200E7447D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		00F90B4515FFE93F00B5F4DF /* ShellScript */ = {
+		DCAE576818A411AE00E7447D /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -260,9 +364,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n\tUFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version  from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n   [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n   [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n  ([[ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]] || \\\n    ([[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && \\\n     [[ -f \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && \\\n     [[ ! \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\n    )\n  )\nthen\n    exit 0\nfi\n\n\n# Clean other platform if needed\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n\techo \"Platform \\\"$UFW_SDK_PLATFORM\\\" was cleaned recently. Cleaning \\\"$UFW_OTHER_PLATFORM\\\" as well\"\n\techo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\n\txcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" clean\nfi\n\n\n# Make sure we are building from fresh binaries\n\nrm -rf \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\n\nif [[ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]]\nthen\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    rm -rf \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nfi\n";
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"";
 		};
-		00F90B4A15FFE93F00B5F4DF /* ShellScript */ = {
+		DCDED62818A413890019A070 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,51 +377,67 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "HEADERS_ROOT=$SRCROOT/$PRODUCT_NAME\nFRAMEWORK_HEADERS_DIR=\"$BUILT_PRODUCTS_DIR/$WRAPPER_NAME/Versions/$FRAMEWORK_VERSION/Headers\"\n\n## only header files expected at this point\nPUBLIC_HEADERS=$(find $FRAMEWORK_HEADERS_DIR/. -not -type d 2> /dev/null | sed -e \"s@.*/@@g\")\n\nFIND_OPTS=\"\"\nfor PUBLIC_HEADER in $PUBLIC_HEADERS; do\n  if [ -n \"$FIND_OPTS\" ]; then\n    FIND_OPTS=\"$FIND_OPTS -o\"\n  fi\n  FIND_OPTS=\"$FIND_OPTS -name '$PUBLIC_HEADER'\"\ndone\n\nif [ -n \"$FIND_OPTS\" ]; then\n  for ORIG_HEADER in $(eval \"find $HEADERS_ROOT/. $FIND_OPTS\" 2> /dev/null | sed -e \"s@^$HEADERS_ROOT/./@@g\"); do\n    PUBLIC_HEADER=$(basename $ORIG_HEADER)\n    RELATIVE_PATH=$(dirname $ORIG_HEADER)\n    if [ -e $FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER ]; then\n      mkdir -p \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH\"\n      mv \"$FRAMEWORK_HEADERS_DIR/$PUBLIC_HEADER\" \"$FRAMEWORK_HEADERS_DIR/$RELATIVE_PATH/$PUBLIC_HEADER\"\n    fi\n  done\nfi\n";
-		};
-		00F90B4B15FFE93F00B5F4DF /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\n\nset +u\nif [[ $UFW_MASTER_SCRIPT_RUNNING ]]\nthen\n    # Nothing for the slave script to do\n    exit 0\nfi\nset -u\nexport UFW_MASTER_SCRIPT_RUNNING=1\n\n\n# Functions\n\n## List files in the specified directory, storing to the specified array.\n#\n# @param $1 The path to list\n# @param $2 The name of the array to fill\n#\n##\nlist_files ()\n{\n    filelist=$(ls \"$1\")\n    while read line\n    do\n        eval \"$2[\\${#$2[*]}]=\\\"\\$line\\\"\"\n    done <<< \"$filelist\"\n}\n\n\n# Sanity check\n\nif [[ ! -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]]\nthen\n    echo \"Framework target \\\"${TARGET_NAME}\\\" had no source files to build from. Make sure your source files have the correct target membership\"\n    exit 1\nfi\n\n\n# Gather information\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\n    UFW_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find platform name from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\n    UFW_SDK_VERSION=${BASH_REMATCH[1]}\nelse\n    echo \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\n    exit 1\nfi\n\nif [[ \"$UFW_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\n    UFW_OTHER_PLATFORM=iphonesimulator\nelse\n    UFW_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$UFW_SDK_PLATFORM$ ]]\nthen\n    UFW_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${UFW_OTHER_PLATFORM}\"\nelse\n    echo \"Could not find $UFW_SDK_PLATFORM in $BUILT_PRODUCTS_DIR\"\n    exit 1\nfi\n\nONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM:-$ONLY_ACTIVE_ARCH}\n\n# Short-circuit if all binaries are up to date.\n# We already checked the other platform in the prerun script.\n\nif [[ -f \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" ]] && [[ -f \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]] && [[ ! \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -nt \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/${EXECUTABLE_PATH}\" ]]\nthen\n    exit 0\nfi\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" == \"YES\" ]\nthen\n    echo \"ONLY_ACTIVE_PLATFORM=${ONLY_ACTIVE_PLATFORM}: Skipping other platform build\"\nelse\n    # Make sure the other platform gets built\n    \n    echo \"Build other platform\"\n    \n    echo xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${UFW_OTHER_PLATFORM}${UFW_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" CONFIGURATION_TEMP_DIR=\"${PROJECT_TEMP_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\" $ACTION\n    \n    \n    # Build the fat static library binary\n    \n    echo \"Create universal static library\"\n    \n    echo \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \"$PLATFORM_DEVELOPER_BIN_DIR/libtool\" -static \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" \"${UFW_OTHER_BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\" -o \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\"\n    \n    echo mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\n    mv \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}.temp\" \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_PATH}\"\nfi\n\n# Build embedded framework structure\n\necho \"Build Embedded Framework\"\n\necho rm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\nrm -rf \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework\"\necho mkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources\"\necho cp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\ncp -a \"${BUILT_PRODUCTS_DIR}/${WRAPPER_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/\"\n\ndeclare -a UFW_FILE_LIST\nlist_files \"${BUILT_PRODUCTS_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\" UFW_FILE_LIST\nfor filename in \"${UFW_FILE_LIST[@]}\"\ndo\n    if [[ \"${filename}\" != \"Info.plist\" ]] && [[ ! \"${filename}\" =~ .*\\.lproj$ ]]\n    then\n        echo ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n        ln -sfh \"../${WRAPPER_NAME}/Resources/${filename}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.embeddedframework/Resources/${filename}\"\n    fi\ndone\n\n\nif [ \"${ONLY_ACTIVE_PLATFORM}\" != \"YES\" ]\nthen\n    # Replace other platform's framework with a copy of this one (so that both have the same universal binary)\n    \n    echo \"Copy from $UFW_SDK_PLATFORM to $UFW_OTHER_PLATFORM\"\n    \n    echo rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    rm -rf \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    echo cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\n    cp -a \"${BUILD_DIR}/${CONFIGURATION}-${UFW_SDK_PLATFORM}\" \"${BUILD_DIR}/${CONFIGURATION}-${UFW_OTHER_PLATFORM}\"\nfi\n";
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcrun xcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nxcrun lipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00F90B4615FFE93F00B5F4DF /* Sources */ = {
+		DCAE572318A4106200E7447D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00F90B7E15FFE9B200B5F4DF /* CRCameraRecorder.m in Sources */,
-				00F90B8015FFE9B200B5F4DF /* CRCGUtils.m in Sources */,
-				00F90B8215FFE9B200B5F4DF /* CRDefines.m in Sources */,
-				00F90B8515FFE9B200B5F4DF /* CRRecorder.m in Sources */,
-				00F90B8715FFE9B200B5F4DF /* CRScreenRecorder.m in Sources */,
-				00F90B8915FFE9B200B5F4DF /* CRUIButton.m in Sources */,
-				00F90B8D15FFE9B200B5F4DF /* CRUIRecordOverlay.m in Sources */,
-				00F90B8F15FFE9B200B5F4DF /* CRUITouch.m in Sources */,
-				00F90B9115FFE9B200B5F4DF /* CRUIViewRecorder.m in Sources */,
-				00F90B9315FFE9B200B5F4DF /* CRUIWindow.m in Sources */,
-				00F90B9515FFE9B200B5F4DF /* CRUtils.m in Sources */,
-				00F90B9715FFE9B200B5F4DF /* CRVideo.m in Sources */,
-				00F90B9915FFE9B200B5F4DF /* CRVideoWriter.m in Sources */,
+				DCAE574D18A4111D00E7447D /* CRCameraRecorder.m in Sources */,
+				DCAE574E18A4111D00E7447D /* CRCGUtils.m in Sources */,
+				DCAE574F18A4111D00E7447D /* CRDefines.m in Sources */,
+				DCAE575018A4111D00E7447D /* CRRecorder.m in Sources */,
+				DCAE575118A4111D00E7447D /* CRScreenRecorder.m in Sources */,
+				DCAE575218A4111D00E7447D /* CRUIButton.m in Sources */,
+				DCAE575318A4111D00E7447D /* CRUIRecordOverlay.m in Sources */,
+				DCAE575418A4111D00E7447D /* CRUITouch.m in Sources */,
+				DCAE575518A4111D00E7447D /* CRUIViewRecorder.m in Sources */,
+				DCAE575618A4111D00E7447D /* CRUIWindow.m in Sources */,
+				DCAE575718A4111D00E7447D /* CRUtils.m in Sources */,
+				DCAE575818A4111D00E7447D /* CRVideo.m in Sources */,
+				DCAE575918A4111D00E7447D /* CRVideoWriter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCAE573018A4106200E7447D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCAE574418A4106200E7447D /* CaptureRecordTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCAE573B18A4106200E7447D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAE572618A4106200E7447D /* CaptureRecord */;
+			targetProxy = DCAE573A18A4106200E7447D /* PBXContainerItemProxy */;
+		};
+		DCDED62718A413730019A070 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DCAE572618A4106200E7447D /* CaptureRecord */;
+			targetProxy = DCDED62618A413730019A070 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		00F90B5515FFE93F00B5F4DF /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				00F90B5615FFE93F00B5F4DF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DCAE574018A4106200E7447D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DCAE574118A4106200E7447D /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -329,9 +449,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -343,10 +467,14 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -355,15 +483,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				SDKROOT = iphoneos;
@@ -371,43 +506,149 @@
 			};
 			name = Release;
 		};
-		00F90B5C15FFE93F00B5F4DF /* Debug */ = {
+		DCAE574618A4106200E7447D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/CaptureRecord.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CaptureRecord/CaptureRecord-Prefix.pch";
-				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "CaptureRecord/CaptureRecord-Info.plist";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = framework;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
-		00F90B5D15FFE93F00B5F4DF /* Release */ = {
+		DCAE574718A4106200E7447D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = (
-					armv6,
-					"$(ARCHS_STANDARD_32_BIT)",
-				);
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				FRAMEWORK_VERSION = A;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				DSTROOT = /tmp/CaptureRecord.dst;
+				ENABLE_NS_ASSERTIONS = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CaptureRecord/CaptureRecord-Prefix.pch";
-				GCC_THUMB_SUPPORT = NO;
-				INFOPLIST_FILE = "CaptureRecord/CaptureRecord-Info.plist";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Headers";
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = framework;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		DCAE574918A4106200E7447D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaptureRecord/CaptureRecord-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CaptureRecordTests/CaptureRecordTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		DCAE574A18A4106200E7447D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CaptureRecord/CaptureRecord-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "CaptureRecordTests/CaptureRecordTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		DCDED62318A413650019A070 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DCDED62418A413650019A070 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
 		};
@@ -423,11 +664,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		00F90B5B15FFE93F00B5F4DF /* Build configuration list for PBXNativeTarget "CaptureRecord" */ = {
+		DCAE574518A4106200E7447D /* Build configuration list for PBXNativeTarget "CaptureRecord" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00F90B5C15FFE93F00B5F4DF /* Debug */,
-				00F90B5D15FFE93F00B5F4DF /* Release */,
+				DCAE574618A4106200E7447D /* Debug */,
+				DCAE574718A4106200E7447D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCAE574818A4106200E7447D /* Build configuration list for PBXNativeTarget "CaptureRecordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCAE574918A4106200E7447D /* Debug */,
+				DCAE574A18A4106200E7447D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCDED62518A413650019A070 /* Build configuration list for PBXAggregateTarget "Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCDED62318A413650019A070 /* Debug */,
+				DCDED62418A413650019A070 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

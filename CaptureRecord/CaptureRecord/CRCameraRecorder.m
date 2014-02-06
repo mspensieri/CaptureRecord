@@ -134,7 +134,6 @@
   [_captureSession removeOutput:_videoOutput];
   [_captureSession removeOutput:_audioOutput];
   _captureSession = nil;
-  dispatch_release(_queue);
   _queue = nil;
   self.presentationTime = kCMTimeNegativeInfinity;
   

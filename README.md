@@ -1,19 +1,18 @@
 CaptureRecord
 ===============
 
-For installation and usage instructions, see http://capturerecord.com
+This is a fork of gabriel's CaptureRecord framework
 
-Warning
-------
-The SDK uses a private function UIGetScreenImage to record the screen. It is potentially unsafe and you should only use this for testing or generating videos. Although this private function call is obfuscated, you shouldn't submit apps to the store with this framework included.
+For information, see http://capturerecord.com and his github page https://github.com/gabriel/CaptureRecord
+
 
 Packaging
-------
-After cloning be sure to recusively update submodules:
+-------
 
-    git submodule update --init --recursive
+This library follows jverkoey's guide for creating iOS frameworks. The instructions can be found on his github page here: https://github.com/jverkoey/iOS-Framework
 
-To package the framework yourself, you'll need to install the Real Framework module at https://github.com/kstenerud/iOS-Universal-Framework
+To bundle into a .framewework, build against the "Framework" targe.
+
 
 License
 -------
