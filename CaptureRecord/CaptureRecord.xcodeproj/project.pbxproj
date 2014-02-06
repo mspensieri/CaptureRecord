@@ -38,7 +38,6 @@
 		DCAE575218A4111D00E7447D /* CRUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6B15FFE9B200B5F4DF /* CRUIButton.m */; };
 		DCAE575318A4111D00E7447D /* CRUIRecordOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B6F15FFE9B200B5F4DF /* CRUIRecordOverlay.m */; };
 		DCAE575418A4111D00E7447D /* CRUITouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7115FFE9B200B5F4DF /* CRUITouch.m */; };
-		DCAE575518A4111D00E7447D /* CRUIViewRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7315FFE9B200B5F4DF /* CRUIViewRecorder.m */; };
 		DCAE575618A4111D00E7447D /* CRUIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7515FFE9B200B5F4DF /* CRUIWindow.m */; };
 		DCAE575718A4111D00E7447D /* CRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7715FFE9B200B5F4DF /* CRUtils.m */; };
 		DCAE575818A4111D00E7447D /* CRVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F90B7915FFE9B200B5F4DF /* CRVideo.m */; };
@@ -52,7 +51,6 @@
 		DCAE576018A4114A00E7447D /* CRUIButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6A15FFE9B200B5F4DF /* CRUIButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCAE576118A4114A00E7447D /* CRUIRecordOverlay.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B6E15FFE9B200B5F4DF /* CRUIRecordOverlay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCAE576218A4114A00E7447D /* CRUITouch.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7015FFE9B200B5F4DF /* CRUITouch.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCAE576318A4114A00E7447D /* CRUIViewRecorder.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7215FFE9B200B5F4DF /* CRUIViewRecorder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCAE576418A4114A00E7447D /* CRUIWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7415FFE9B200B5F4DF /* CRUIWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCAE576518A4114A00E7447D /* CRUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7615FFE9B200B5F4DF /* CRUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCAE576618A4114A00E7447D /* CRVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = 00F90B7815FFE9B200B5F4DF /* CRVideo.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -112,8 +110,6 @@
 		00F90B6F15FFE9B200B5F4DF /* CRUIRecordOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIRecordOverlay.m; sourceTree = "<group>"; };
 		00F90B7015FFE9B200B5F4DF /* CRUITouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUITouch.h; sourceTree = "<group>"; };
 		00F90B7115FFE9B200B5F4DF /* CRUITouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUITouch.m; sourceTree = "<group>"; };
-		00F90B7215FFE9B200B5F4DF /* CRUIViewRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIViewRecorder.h; sourceTree = "<group>"; };
-		00F90B7315FFE9B200B5F4DF /* CRUIViewRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIViewRecorder.m; sourceTree = "<group>"; };
 		00F90B7415FFE9B200B5F4DF /* CRUIWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUIWindow.h; sourceTree = "<group>"; };
 		00F90B7515FFE9B200B5F4DF /* CRUIWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRUIWindow.m; sourceTree = "<group>"; };
 		00F90B7615FFE9B200B5F4DF /* CRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRUtils.h; sourceTree = "<group>"; };
@@ -205,8 +201,6 @@
 				00F90B6F15FFE9B200B5F4DF /* CRUIRecordOverlay.m */,
 				00F90B7015FFE9B200B5F4DF /* CRUITouch.h */,
 				00F90B7115FFE9B200B5F4DF /* CRUITouch.m */,
-				00F90B7215FFE9B200B5F4DF /* CRUIViewRecorder.h */,
-				00F90B7315FFE9B200B5F4DF /* CRUIViewRecorder.m */,
 				00F90B7415FFE9B200B5F4DF /* CRUIWindow.h */,
 				00F90B7515FFE9B200B5F4DF /* CRUIWindow.m */,
 				00F90B7615FFE9B200B5F4DF /* CRUtils.h */,
@@ -267,7 +261,6 @@
 				DCAE576018A4114A00E7447D /* CRUIButton.h in Headers */,
 				DCAE576118A4114A00E7447D /* CRUIRecordOverlay.h in Headers */,
 				DCAE576218A4114A00E7447D /* CRUITouch.h in Headers */,
-				DCAE576318A4114A00E7447D /* CRUIViewRecorder.h in Headers */,
 				DCAE576518A4114A00E7447D /* CRUtils.h in Headers */,
 				DCAE576618A4114A00E7447D /* CRVideo.h in Headers */,
 			);
@@ -394,7 +387,6 @@
 				DCAE575218A4111D00E7447D /* CRUIButton.m in Sources */,
 				DCAE575318A4111D00E7447D /* CRUIRecordOverlay.m in Sources */,
 				DCAE575418A4111D00E7447D /* CRUITouch.m in Sources */,
-				DCAE575518A4111D00E7447D /* CRUIViewRecorder.m in Sources */,
 				DCAE575618A4111D00E7447D /* CRUIWindow.m in Sources */,
 				DCAE575718A4111D00E7447D /* CRUtils.m in Sources */,
 				DCAE575818A4111D00E7447D /* CRVideo.m in Sources */,

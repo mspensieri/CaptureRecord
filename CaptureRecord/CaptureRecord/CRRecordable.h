@@ -32,7 +32,6 @@
  
  @see CRScreenRecorder
  @see CRCameraRecorder
- @see CRUIViewRecorder
  */
 @protocol CRRecordable <NSObject>
 

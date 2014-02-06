@@ -26,10 +26,6 @@
 #import "CRScreenRecorder.h"
 
 #import <UIKit/UIKit.h>
-#import "CRDefines.h"
-#import "CRUtils.h"
-#include <dlfcn.h>
-#include <stdio.h>
 
 @implementation CRScreenRecorder
 

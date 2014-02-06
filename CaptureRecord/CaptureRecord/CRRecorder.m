@@ -24,7 +24,6 @@
 //
 
 #import "CRRecorder.h"
-#import "CRUIViewRecorder.h"
 #import "CRScreenRecorder.h"
 #import "CRCameraRecorder.h"
 #import "CRUtils.h"
