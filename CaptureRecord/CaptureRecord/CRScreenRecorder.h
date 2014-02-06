@@ -29,7 +29,7 @@
  Recorder for the screen.
  */
 @interface CRScreenRecorder : NSObject <CRRecordable> {
-  CGSize _size;
+    CGSize _size;
 }
 
 @end

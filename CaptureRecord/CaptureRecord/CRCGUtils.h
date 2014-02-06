@@ -144,7 +144,7 @@ void CRCGContextDrawRoundedRectImageWithShadow(CGContextRef context, CGImageRef 
  @param strokeColor Stroke color
  @param strokeWidth Stroke size
  @param contentMode Content mode
- @param backgroundColor If image is smaller than rect (and not scaling image), this background color is used. 
+ @param backgroundColor If image is smaller than rect (and not scaling image), this background color is used.
  */
 void CRCGContextDrawImage(CGContextRef context, CGImageRef image, CGSize imageSize, CGRect rect, CGColorRef strokeColor, CGFloat strokeWidth, UIViewContentMode contentMode, CGColorRef backgroundColor);
 
@@ -330,34 +330,34 @@ CGRect CRCGRectWithInsets(CGSize size, UIEdgeInsets insets);
 //
 //
 //   CRUIBorderStyleTopLeftRight
-//   -------  
+//   -------
 //   |     |
 //
-//  
+//
 //   CRUIBorderStyleRoundedBottom
 //   -------
 //   |     |
 //   ╰----╯
 //
 typedef enum {
-  CRUIBorderStyleNone = 0,
-  CRUIBorderStyleNormal, // Straight top, right, botton, left
-  CRUIBorderStyleRounded, // Rounded top, right, bottom, left
-  CRUIBorderStyleTopOnly, // Top (straight) only
-  CRUIBorderStyleBottomOnly, // Bottom (straight) only
-  CRUIBorderStyleTopBottom, // Top and bottom only
-  CRUIBorderStyleRoundedTop, // Rounded top with left and right sides (no bottom)
-  CRUIBorderStyleTopLeftRight, // Top, left and right sides (no bottom)
-  CRUIBorderStyleBottomLeftRight, // Bottom, left and right sides (no top)
-  CRUIBorderStyleRoundedBottom, // Rounded bottom
-
-  CRUIBorderStyleRoundedTopOnly, // Rounded top with no sides
-  CRUIBorderStyleRoundedLeftCap, // Rounded left segment
-  CRUIBorderStyleRoundedRightCap, // Rounded right segment
-  CRUIBorderStyleRoundedBack, // Rounded back button
-  
-  CRUIBorderStyleRoundedTopWithBotton, // Rounded top with left and right sides (with bottom)
-  CRUIBorderStyleRoundedBottomLeftRight, // Rounded bottom (no top)
+    CRUIBorderStyleNone = 0,
+    CRUIBorderStyleNormal, // Straight top, right, botton, left
+    CRUIBorderStyleRounded, // Rounded top, right, bottom, left
+    CRUIBorderStyleTopOnly, // Top (straight) only
+    CRUIBorderStyleBottomOnly, // Bottom (straight) only
+    CRUIBorderStyleTopBottom, // Top and bottom only
+    CRUIBorderStyleRoundedTop, // Rounded top with left and right sides (no bottom)
+    CRUIBorderStyleTopLeftRight, // Top, left and right sides (no bottom)
+    CRUIBorderStyleBottomLeftRight, // Bottom, left and right sides (no top)
+    CRUIBorderStyleRoundedBottom, // Rounded bottom
+    
+    CRUIBorderStyleRoundedTopOnly, // Rounded top with no sides
+    CRUIBorderStyleRoundedLeftCap, // Rounded left segment
+    CRUIBorderStyleRoundedRightCap, // Rounded right segment
+    CRUIBorderStyleRoundedBack, // Rounded back button
+    
+    CRUIBorderStyleRoundedTopWithBotton, // Rounded top with left and right sides (with bottom)
+    CRUIBorderStyleRoundedBottomLeftRight, // Rounded bottom (no top)
 } CRUIBorderStyle;
 
 CGPathRef CRCGPathCreateStyledRect(CGRect rect, CRUIBorderStyle style, CGFloat strokeWidth, CGFloat cornerRadius);
@@ -386,18 +386,18 @@ void CRCGColorGetComponents(CGColorRef color, CGFloat *red, CGFloat *green, CGFl
 #pragma mark Shading
 
 typedef enum {
-  CRUIShadingTypeUnknown = -1,
-  CRUIShadingTypeNone = 0,
-  CRUIShadingTypeLinear, // Linear color blend (for color to color2)
-  CRUIShadingTypeHorizontalEdge, // Horizontal edge (for color to color2 and color3 to color4)
-  CRUIShadingTypeHorizontalReverseEdge, // Horizontal edge reversed
-  CRUIShadingTypeExponential,
-  CRUIShadingTypeMetalEdge,
+    CRUIShadingTypeUnknown = -1,
+    CRUIShadingTypeNone = 0,
+    CRUIShadingTypeLinear, // Linear color blend (for color to color2)
+    CRUIShadingTypeHorizontalEdge, // Horizontal edge (for color to color2 and color3 to color4)
+    CRUIShadingTypeHorizontalReverseEdge, // Horizontal edge reversed
+    CRUIShadingTypeExponential,
+    CRUIShadingTypeMetalEdge,
 } CRUIShadingType;
 
 void CRCGContextDrawShadingWithHeight(CGContextRef context, CGColorRef color, CGColorRef color2, CGColorRef color3, CGColorRef color4, CGFloat height, CRUIShadingType shadingType);
 
-void CRCGContextDrawShading(CGContextRef context, CGColorRef color, CGColorRef color2, CGColorRef color3, CGColorRef color4, CGPoint start, CGPoint end, CRUIShadingType shadingType, 
+void CRCGContextDrawShading(CGContextRef context, CGColorRef color, CGColorRef color2, CGColorRef color3, CGColorRef color4, CGPoint start, CGPoint end, CRUIShadingType shadingType,
                             BOOL extendStart, BOOL extendEnd);
 
 

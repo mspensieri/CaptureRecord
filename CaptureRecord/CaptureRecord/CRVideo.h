@@ -28,12 +28,12 @@
 #import "CRDefines.h"
 
 typedef enum {
-  CRVideoStatusNone = 0,
-  CRVideoStatusStarted,
-  CRVideoStatusStopped,
-  CRVideoStatusSaving,
-  CRVideoStatusSaved,
-  CRVideoStatusDiscarded,
+    CRVideoStatusNone = 0,
+    CRVideoStatusStarted,
+    CRVideoStatusStopped,
+    CRVideoStatusSaving,
+    CRVideoStatusSaved,
+    CRVideoStatusDiscarded,
 } CRVideoStatus;
 
 /*!

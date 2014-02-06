@@ -66,7 +66,7 @@
 @end
 
 /*!
- The CRAudioWriter protocol defines that a class can record audio. 
+ The CRAudioWriter protocol defines that a class can record audio.
  
  @see CRVideoWriter
  */

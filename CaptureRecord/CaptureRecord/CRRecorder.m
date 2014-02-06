@@ -32,87 +32,87 @@
 @implementation CRRecorder
 
 - (id)init {
-  if ((self = [super init])) {
-    _options = CRRecorderOptionUserCameraRecording|CRRecorderOptionUserAudioRecording|CRRecorderOptionTouchRecording;
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_onEvent:) name:CRUIEventNotification object:nil];
-  }
-  return self;
+    if ((self = [super init])) {
+        _options = CRRecorderOptionUserCameraRecording|CRRecorderOptionUserAudioRecording|CRRecorderOptionTouchRecording;
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_onEvent:) name:CRUIEventNotification object:nil];
+    }
+    return self;
 }
 
 - (void)dealloc {
-  [[NSNotificationCenter defaultCenter] removeObserver:self];
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 + (CRRecorder *)sharedRecorder {
-  static dispatch_once_t once;
-  static id sharedInstance;
-  dispatch_once(&once, ^{
-    sharedInstance = [[self alloc] init];
-  });
-  return sharedInstance;
+    static dispatch_once_t once;
+    static id sharedInstance;
+    dispatch_once(&once, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
 }
 
 - (void)setOptions:(CRRecorderOptions)options {
-  if (self.isRecording) [NSException raise:CRException format:@"You can't set recording options while recording is in progress."];
-  _options = options;
+    if (self.isRecording) [NSException raise:CRException format:@"You can't set recording options while recording is in progress."];
+    _options = options;
 }
 
 - (BOOL)isRecording {
-  return (_videoWriter && _videoWriter.isRecording);
+    return (_videoWriter && _videoWriter.isRecording);
 }
 
 - (void)_alert:(NSString *)message {
-  UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
-  [alertView show];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:message delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alertView show];
 }
 
-- (BOOL)start:(NSError **)error {  
-  if ([[CRUtils machine] hasPrefix:@"iPhone5"] && [UIScreen mainScreen].bounds.size.height <= 480) {
-    [self _alert:@"Recording only works with full size app on iPhone 5."];
+- (BOOL)start:(NSError **)error {
+    if ([[CRUtils machine] hasPrefix:@"iPhone5"] && [UIScreen mainScreen].bounds.size.height <= 480) {
+        [self _alert:@"Recording only works with full size app on iPhone 5."];
+        return NO;
+    }
+    
+    CRScreenRecorder *viewRecoder = [[CRScreenRecorder alloc] init];
+    
+    _videoWriter = [[CRVideoWriter alloc] initWithRecordable:viewRecoder options:_options];
+    
+    if ([_videoWriter start:error]) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:CRRecorderDidStartNotification object:self];
+        return YES;
+    }
     return NO;
-  }
-  
-  CRScreenRecorder *viewRecoder = [[CRScreenRecorder alloc] init];
-    
-  _videoWriter = [[CRVideoWriter alloc] initWithRecordable:viewRecoder options:_options];
-    
-  if ([_videoWriter start:error]) {
-    [[NSNotificationCenter defaultCenter] postNotificationName:CRRecorderDidStartNotification object:self];
-    return YES;
-  }
-  return NO;
 }
 
 - (void)_stopForUnregistered {
-  [self stop:nil];
+    [self stop:nil];
 }
 
 - (BOOL)stop:(NSError **)error {
-  BOOL stopped = [_videoWriter stop:error];
-  [[NSNotificationCenter defaultCenter] postNotificationName:CRRecorderDidStopNotification object:self];
-  return stopped;
+    BOOL stopped = [_videoWriter stop:error];
+    [[NSNotificationCenter defaultCenter] postNotificationName:CRRecorderDidStopNotification object:self];
+    return stopped;
 }
 
 - (void)saveVideoToAlbumWithResultBlock:(CRRecorderSaveResultBlock)resultBlock failureBlock:(CRRecorderSaveFailureBlock)failureBlock {
-  return [_videoWriter saveToAlbumWithName:_albumName resultBlock:resultBlock failureBlock:failureBlock];
+    return [_videoWriter saveToAlbumWithName:_albumName resultBlock:resultBlock failureBlock:failureBlock];
 }
 
 - (void)saveVideoToAlbumWithName:(NSString *)name resultBlock:(CRRecorderSaveResultBlock)resultBlock failureBlock:(CRRecorderSaveFailureBlock)failureBlock {
-  return [_videoWriter saveToAlbumWithName:name resultBlock:resultBlock failureBlock:failureBlock];
+    return [_videoWriter saveToAlbumWithName:name resultBlock:resultBlock failureBlock:failureBlock];
 }
 
 - (BOOL)discardVideo:(NSError **)error {
-  return [_videoWriter discard:error];
+    return [_videoWriter discard:error];
 }
 
 #pragma mark Delegates (CRUIWindow)
 
 - (void)_onEvent:(NSNotification *)notification {
-  UIEvent *event = [notification object];
-  if ([_videoWriter isRecording]) {
-    //[_eventRecorder recordEvent:event];
-    [_videoWriter setEvent:event];
-  }
+    UIEvent *event = [notification object];
+    if ([_videoWriter isRecording]) {
+        //[_eventRecorder recordEvent:event];
+        [_videoWriter setEvent:event];
+    }
 }
 
 @end

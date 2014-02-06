@@ -34,112 +34,112 @@
 #define kButtonHeight 37
 
 typedef enum {
-  CRUIButtonIconPositionLeft = 0, // Default
-  CRUIButtonIconPositionCenter, // Centered
-  CRUIButtonIconPositionTop, // Aligned with top of button
+    CRUIButtonIconPositionLeft = 0, // Default
+    CRUIButtonIconPositionCenter, // Centered
+    CRUIButtonIconPositionTop, // Aligned with top of button
 } CRUIButtonIconPosition;
 
 typedef enum {
-  CRUIButtonSecondaryTitlePositionDefault = 0, // Default, next to title
-  CRUIButtonSecondaryTitlePositionBottom, // Underneath the title
-  CRUIButtonSecondaryTitlePositionRightAlign, // Next to title, right aligned
-  CRUIButtonSecondaryTitlePositionBottomLeftSingle, // Bottom left, single line
+    CRUIButtonSecondaryTitlePositionDefault = 0, // Default, next to title
+    CRUIButtonSecondaryTitlePositionBottom, // Underneath the title
+    CRUIButtonSecondaryTitlePositionRightAlign, // Next to title, right aligned
+    CRUIButtonSecondaryTitlePositionBottomLeftSingle, // Bottom left, single line
 } CRUIButtonSecondaryTitlePosition;
 
 @interface CRUIButton : UIControl {
-
-  NSString *_title;
-  
-  UIColor *_titleColor;
-  UIFont *_titleFont;
-  UITextAlignment _titleAlignment;
-  CGSize _titleSize;
-  UIEdgeInsets __titleInsets;
-  
-  UIColor *_color;
-  UIColor *_color2;
-  UIColor *_color3;
-  UIColor *_color4;
-  
-  CRUIShadingType _shadingType;
-  
-  UIImage *_image;
-  UIImage *_highlightedImage;
-  UIImage *_disabledImage;
-
-  UIEdgeInsets _margin;
-  
-  UIColor *_highlightedTitleColor;
-  UIColor *_highlightedTitleShadowColor;
-  CGSize _highlightedTitleShadowOffset;
-
-  UIColor *_highlightedColor;
-  UIColor *_highlightedColor2;
-  CRUIShadingType _highlightedShadingType;
-  UIColor *_highlightedBorderColor;
-  UIColor *_highlightedBorderShadowColor;
-  CGFloat _highlightedBorderShadowBlur;
-  UIImage *_highlightedIconImage;
-  
-  UIColor *_disabledTitleColor;
-  UIColor *_disabledColor;
-  UIColor *_disabledColor2; 
-  UIColor *_disabledBorderColor;
-  CRUIShadingType _disabledShadingType;
-  UIImage *_disabledIconImage;
-  CGFloat _disabledAlpha;
-  UIColor *_disabledTitleShadowColor;
-  
-  UIColor *_selectedTitleColor;
-  UIColor *_selectedColor;
-  UIColor *_selectedColor2;
-  CRUIShadingType _selectedShadingType;
-  UIColor *_selectedBorderShadowColor;
-  CGFloat _selectedBorderShadowBlur;
-  UIImage *_selectedIconImage;
-
-  UIColor *_borderColor;
-  CGFloat _borderWidth;
-  CRUIBorderStyle _borderStyle;
-  CGFloat _cornerRadius;
-  CGFloat _cornerRadiusRatio;
-  UIColor *_borderShadowColor;
-  CGFloat _borderShadowBlur;
-  
-  UIColor *_titleShadowColor;
-  CGSize _titleShadowOffset;
-  
-  UIImageView *_iconImageView;
-  CGSize _iconImageSize;
-  CGPoint _iconOrigin;
-  
-  UIImage *_accessoryImage;
-  UIImage *_highlightedAccessoryImage;
-  
-  CRUIButtonIconPosition _iconPosition;
-  UIColor *_iconShadowColor;
-  
-  UIActivityIndicatorView *_activityIndicatorView;
-  
-  NSString *_secondaryTitle;
-  UIColor *_secondaryTitleColor;
-  UIFont *_secondaryTitleFont;
-  CRUIButtonSecondaryTitlePosition _secondaryTitlePosition;
-  
-  NSString *_abbreviatedTitle;
-  CGSize _abbreviatedTitleSize;
-  
-  NSInteger _maxLineCount;
     
-  BOOL _titleHidden;
-  BOOL _highlightedEnabled;
-  BOOL _selectedEnabled;
+    NSString *_title;
+    
+    UIColor *_titleColor;
+    UIFont *_titleFont;
+    UITextAlignment _titleAlignment;
+    CGSize _titleSize;
+    UIEdgeInsets __titleInsets;
+    
+    UIColor *_color;
+    UIColor *_color2;
+    UIColor *_color3;
+    UIColor *_color4;
+    
+    CRUIShadingType _shadingType;
+    
+    UIImage *_image;
+    UIImage *_highlightedImage;
+    UIImage *_disabledImage;
+    
+    UIEdgeInsets _margin;
+    
+    UIColor *_highlightedTitleColor;
+    UIColor *_highlightedTitleShadowColor;
+    CGSize _highlightedTitleShadowOffset;
+    
+    UIColor *_highlightedColor;
+    UIColor *_highlightedColor2;
+    CRUIShadingType _highlightedShadingType;
+    UIColor *_highlightedBorderColor;
+    UIColor *_highlightedBorderShadowColor;
+    CGFloat _highlightedBorderShadowBlur;
+    UIImage *_highlightedIconImage;
+    
+    UIColor *_disabledTitleColor;
+    UIColor *_disabledColor;
+    UIColor *_disabledColor2;
+    UIColor *_disabledBorderColor;
+    CRUIShadingType _disabledShadingType;
+    UIImage *_disabledIconImage;
+    CGFloat _disabledAlpha;
+    UIColor *_disabledTitleShadowColor;
+    
+    UIColor *_selectedTitleColor;
+    UIColor *_selectedColor;
+    UIColor *_selectedColor2;
+    CRUIShadingType _selectedShadingType;
+    UIColor *_selectedBorderShadowColor;
+    CGFloat _selectedBorderShadowBlur;
+    UIImage *_selectedIconImage;
+    
+    UIColor *_borderColor;
+    CGFloat _borderWidth;
+    CRUIBorderStyle _borderStyle;
+    CGFloat _cornerRadius;
+    CGFloat _cornerRadiusRatio;
+    UIColor *_borderShadowColor;
+    CGFloat _borderShadowBlur;
+    
+    UIColor *_titleShadowColor;
+    CGSize _titleShadowOffset;
+    
+    UIImageView *_iconImageView;
+    CGSize _iconImageSize;
+    CGPoint _iconOrigin;
+    
+    UIImage *_accessoryImage;
+    UIImage *_highlightedAccessoryImage;
+    
+    CRUIButtonIconPosition _iconPosition;
+    UIColor *_iconShadowColor;
+    
+    UIActivityIndicatorView *_activityIndicatorView;
+    
+    NSString *_secondaryTitle;
+    UIColor *_secondaryTitleColor;
+    UIFont *_secondaryTitleFont;
+    CRUIButtonSecondaryTitlePosition _secondaryTitlePosition;
+    
+    NSString *_abbreviatedTitle;
+    CGSize _abbreviatedTitleSize;
+    
+    NSInteger _maxLineCount;
+    
+    BOOL _titleHidden;
+    BOOL _highlightedEnabled;
+    BOOL _selectedEnabled;
 }
 
 /*!
  Text for button.
  */
-@property (retain, nonatomic) NSString *title; 
+@property (retain, nonatomic) NSString *title;
 
 /*!
  Text font for button.
@@ -160,7 +160,7 @@ typedef enum {
  Background color for button.
  Can be used with shadingType, color2, color3, color4.
  */
-@property (retain, nonatomic) UIColor *color; 
+@property (retain, nonatomic) UIColor *color;
 
 /*!
  Background (alternate) color for button.
@@ -265,7 +265,7 @@ typedef enum {
 /*!
  Insets for title text.
  */
-@property (assign, nonatomic) UIEdgeInsets titleInsets; 
+@property (assign, nonatomic) UIEdgeInsets titleInsets;
 
 /*!
  Insets (padding).
@@ -287,7 +287,7 @@ typedef enum {
  If set, will use this size instead of the image.size.
  Defaults to CGSizeZero (disabled).
  */
-@property (assign, nonatomic) CGSize iconImageSize; 
+@property (assign, nonatomic) CGSize iconImageSize;
 
 /*!
  Override position for icon.

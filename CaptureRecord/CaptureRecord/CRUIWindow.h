@@ -33,7 +33,7 @@
  Window for the recording.
  */
 @interface CRUIWindow : UIWindow {
-  CRUIRecordOverlay *_recordOverlay;
+    CRUIRecordOverlay *_recordOverlay;
 }
 
 /*!

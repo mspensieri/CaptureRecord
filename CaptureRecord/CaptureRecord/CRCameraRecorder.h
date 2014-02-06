@@ -30,19 +30,19 @@
  Recorder for the front facing camera.
  */
 @interface CRCameraRecorder : NSObject <AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate, CRRecordable> {
-  AVCaptureSession *_captureSession;
-  AVCaptureVideoDataOutput *_videoOutput;
-  AVCaptureAudioDataOutput *_audioOutput;
+    AVCaptureSession *_captureSession;
+    AVCaptureVideoDataOutput *_videoOutput;
+    AVCaptureAudioDataOutput *_audioOutput;
     
-  uint8_t *_data; // Data from camera
-  size_t _dataSize;
-  size_t _width;
-  size_t _height;
-  size_t _bytesPerRow;
-  
-  CVImageBufferRef _imageBuffer;
-  
-  dispatch_queue_t _queue;
+    uint8_t *_data; // Data from camera
+    size_t _dataSize;
+    size_t _width;
+    size_t _height;
+    size_t _bytesPerRow;
+    
+    CVImageBufferRef _imageBuffer;
+    
+    dispatch_queue_t _queue;
 }
 
 /*!

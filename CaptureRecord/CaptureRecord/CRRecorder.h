@@ -30,13 +30,13 @@
  The CRRecorder records the screen, user input and audio.
  */
 @interface CRRecorder : NSObject {
-  CRVideoWriter *_videoWriter;
-  CRRecorderOptions _options;
-  NSString *_albumName;
+    CRVideoWriter *_videoWriter;
+    CRRecorderOptions _options;
+    NSString *_albumName;
 }
 
 /*!
- The album name for the camera roll, where videos are saved. 
+ The album name for the camera roll, where videos are saved.
  Defaults to nil, the default Camera Roll.
  */
 @property (strong) NSString *albumName;
@@ -57,7 +57,7 @@
  Stop the recording.
  @param error Out error
  @result YES if started succesfully, NO otherwise
-*/
+ */
 - (BOOL)stop:(NSError **)error;
 
 /*!

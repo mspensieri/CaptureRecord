@@ -75,17 +75,17 @@ extern NSString *const CRUIEventNotification;
 
 
 typedef enum : NSInteger {
-  CRErrorCodeInvalidVideo = -100,
-  CRErrorCodeInvalidState = -101,
+    CRErrorCodeInvalidVideo = -100,
+    CRErrorCodeInvalidState = -101,
 } CRErrorCode;
 
 /*!
  CRRecorder options.
  */
 typedef enum : NSUInteger {
-  CRRecorderOptionUserCameraRecording = 1 << 0, // Record the user using the front facing camera
-  CRRecorderOptionUserAudioRecording = 1 << 1, // Record the user audio
-  CRRecorderOptionTouchRecording = 1 << 2, // Record touches
+    CRRecorderOptionUserCameraRecording = 1 << 0, // Record the user using the front facing camera
+    CRRecorderOptionUserAudioRecording = 1 << 1, // Record the user audio
+    CRRecorderOptionTouchRecording = 1 << 2, // Record touches
 } CRRecorderOptions;
 
 /*!

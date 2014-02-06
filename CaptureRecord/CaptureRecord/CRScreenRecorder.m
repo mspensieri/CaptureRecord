@@ -30,10 +30,10 @@
 @implementation CRScreenRecorder
 
 - (id)init {
-  if ((self = [super init])) {
-    _size = [UIScreen mainScreen].bounds.size;
-  }
-  return self;
+    if ((self = [super init])) {
+        _size = [UIScreen mainScreen].bounds.size;
+    }
+    return self;
 }
 
 - (void)renderInContext:(CGContextRef)context videoSize:(CGSize)videoSize {
@@ -65,11 +65,11 @@
             CGContextRestoreGState(context);
         }
     }
-
+    
 }
 
 - (CGSize)size {
-  return CGSizeMake(_size.width, _size.height);
+    return CGSizeMake(_size.width, _size.height);
 }
 
 @end

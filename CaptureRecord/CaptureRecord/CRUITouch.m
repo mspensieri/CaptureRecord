@@ -28,11 +28,11 @@
 @implementation CRUITouch
 
 - (id)initWithPoint:(CGPoint)point {
-  if ((self = [super init])) {
-    _point = point;
-    _time = [NSDate timeIntervalSinceReferenceDate];
-  }
-  return self;
+    if ((self = [super init])) {
+        _point = point;
+        _time = [NSDate timeIntervalSinceReferenceDate];
+    }
+    return self;
 }
 
 @end
