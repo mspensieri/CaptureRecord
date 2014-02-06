@@ -383,15 +383,13 @@
 
   @synchronized(self) {
     if (!_touches) _touches = [[NSMutableArray alloc] init];
-    for (UITouch *touch in [event allTouches]) {
-      if (touch.phase == UITouchPhaseEnded) {
-        CGPoint p = [touch locationInView:touch.window];
-        // Flip
-        p.y = touch.window.frame.size.height - p.y;
-        CRUITouch *crTouch = [[CRUITouch alloc] initWithPoint:p];
-        [_touches addObject:crTouch];
+      for (UITouch *touch in [event allTouches]) {
+          CGPoint p = [touch locationInView:touch.window];
+          // Flip
+          p.y = touch.window.frame.size.height - p.y;
+          CRUITouch *crTouch = [[CRUITouch alloc] initWithPoint:p];
+          [_touches addObject:crTouch];
       }
-    }
   }
 }
 
