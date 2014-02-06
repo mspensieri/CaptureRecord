@@ -30,28 +30,46 @@
 #import "CRUtils.h"
 #include <dlfcn.h>
 #include <stdio.h>
-#define UIKITPATH "/System/Library/Framework/UIKit.framework/UIKit"
 
 @implementation CRScreenRecorder
 
 - (id)init {
   if ((self = [super init])) {
-    void *UIKit = dlopen(UIKITPATH, RTLD_LAZY);    
-    NSString *methodName = [CRUtils cr_rot13:@"HVTrgFperraVzntr"]; // UIGetScreenImage
-    _CRGetScreenImage = dlsym(UIKit, [methodName UTF8String]);
-    dlclose(UIKit);
-    
     _size = [UIScreen mainScreen].bounds.size;
   }
   return self;
 }
 
 - (void)renderInContext:(CGContextRef)context videoSize:(CGSize)videoSize {
-  if (!_CRGetScreenImage) return;
-  CGImageRef (*CRGetScreenImage)() = _CRGetScreenImage;
-  CGImageRef image = CRGetScreenImage();
-  CGContextDrawImage(context, CGRectMake(0, 0, _size.width, _size.height), image);
-  CGImageRelease(image);
+    
+    for (UIWindow *window in [UIApplication sharedApplication].windows)
+    {
+        if (![window respondsToSelector:@selector(screen)] || [window screen] == [UIScreen mainScreen])
+        {
+            // Modified from apple developer code sample : https://developer.apple.com/library/ios/qa/qa1714/_index.html
+            
+            // -renderInContext: renders in the coordinate space of the layer,
+            // so we must first apply the layer's geometry to the graphics context
+            CGContextSaveGState(context);
+            // Center the context around the window's anchor point
+            CGContextTranslateCTM(context, [window center].x, [window center].y);
+            // Apply the window's transform about the anchor point
+            CGContextConcatCTM(context, [window transform]);
+            // Offset by the portion of the bounds left of and above the anchor point
+            CGContextTranslateCTM(context,
+                                  -[window bounds].size.width * [[window layer] anchorPoint].x,
+                                  -[window bounds].size.height * [[window layer] anchorPoint].y);
+            
+            CGContextConcatCTM(context, CGAffineTransformMake(1, 0, 0, -1, 0, videoSize.height));
+            
+            // Render the layer hierarchy to the current context
+            [[window layer] renderInContext:context];
+            
+            // Restore the context
+            CGContextRestoreGState(context);
+        }
+    }
+
 }
 
 - (CGSize)size {
