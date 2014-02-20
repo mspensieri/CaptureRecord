@@ -11,7 +11,7 @@ Packaging
 
 This library follows jverkoey's guide for creating iOS frameworks. The instructions can be found on his github page here: https://github.com/jverkoey/iOS-Framework
 
-To bundle into a .framewework, build against the "Framework" targe.
+To bundle into a .framewework, build against the "Framework" target.
 
 
 License
